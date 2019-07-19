@@ -1,0 +1,10 @@
+version : '3'
+services :
+  zebedee :
+    network_mode : 'host'
+    build:
+      context : .
+      dockerfile : Dockerfile
+    restart : always
+    volumes:
+      - ./server.zbd:/zbd/server.zbd
