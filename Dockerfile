@@ -3,10 +3,10 @@ LABEL maintainer="github.com/kooroshh"
 WORKDIR /zbd
 RUN apk add make build-base 
 
-RUN wget http://www.winton.org.uk/zebedee/zebedee-2.4.1A.tar.gz \
-    && wget http://www.winton.org.uk/zebedee/blowfish-0.9.5a.tar.gz \
-    && wget http://www.winton.org.uk/zebedee/zlib-1.2.3.tar.gz \
-    && wget http://www.winton.org.uk/zebedee/bzip2-1.0.3.tar.gz \
+RUN wget https://github.com/digitalsoftwaresolutions/Zebedee/raw/master/zebedee-2.4.1A.tar.gz \
+    && wget https://github.com/digitalsoftwaresolutions/Zebedee/raw/master/blowfish-0.9.5a.tar.gz \
+    && wget https://github.com/digitalsoftwaresolutions/Zebedee/raw/master/zlib-1.2.3.tar.gz \
+    && wget https://github.com/digitalsoftwaresolutions/Zebedee/raw/master/bzip2-1.0.3.tar.gz \
     && tar -xvf zebedee-2.4.1A.tar.gz \
     && tar -xvf blowfish-0.9.5a.tar.gz \
     && tar -xvf zlib-1.2.3.tar.gz \
